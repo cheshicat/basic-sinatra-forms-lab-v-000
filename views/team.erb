@@ -5,9 +5,9 @@
   <title>Basketball Team</title>
  </head>
  <body>
-   <h1><%=@name %></h1>
-
-
-
+   <h1><%= @name %></h1>
+   <% @.each do |friend| %>
+	  <h2><%= friend %></h2>
+  <% end %>
  </body>
 </html>
